@@ -1,0 +1,17 @@
+<!--This is embedded ruby that dynamically accesses the instance variable @user and creates HTML to be sent back to the user controller -->
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
